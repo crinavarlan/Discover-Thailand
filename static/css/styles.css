@@ -1,0 +1,275 @@
+html,
+body {
+	margin: 0;
+	background: #fff;
+	font-family: 'Oswald', sans-serif;
+}
+body a {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+}
+
+.navbar{
+	background-color: black;
+	height: 70px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1em;
+}
+/*--carousel slide--*/
+.carousel-caption > h3 {
+  display: inline-block;
+  padding: 10px;
+  background: #506B7B;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  display: block;
+  height: 470px;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1;
+}
+  /*--//carousel slide--*/
+
+
+/*-- Thailand Fast Facts --*/
+.fast-facts-grd {
+    text-align: center;
+    padding: 10px 0px;
+}
+.fast-facts-grd img {
+	font-size:40px;
+    padding-left: 140px;
+}
+.fast-facts-grd h4 {
+	padding-top: 5px;
+    font-size: 20px;
+    color: #303030;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.fast-facts-grd p{
+	font-size:0.875em;
+	color:#9c9c9c;
+	line-height:1.8em;
+}
+.fast-facts-grids{
+	margin:3em 0 0;
+}
+.fast-facts h3 {
+	font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+/*-- //Thailand Fast Facts --*/
+
+
+/*-- Places to visit --*/
+
+.places-to-visit {
+	padding: 30px 0;
+}
+.places-to-visit h3 {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 40px;
+	color: #000;
+}
+.places-to-visit .grid-wrap {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
+.places-to-visit .grid {
+	position: relative;
+	-webkit-transition: all 0.5s cubic-bezier(0,0,0.25,1);
+	transition: all 0.5s cubic-bezier(0,0,0.25,1);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.places-to-visit .grid figure {
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+.places-to-visit .grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+	width: 32.4%;
+	margin: 5px;
+}
+
+.places-to-visit .grid figure img {
+	position: relative;
+	display: block;
+}
+.places-to-visit .grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.places-to-visit .grid figure figcaption p {
+	padding: 2em;
+	color: #fff;
+	font-size: 0.8em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.places-to-visit .grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+.places-to-visit .grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.places-to-visit figure.effect-zoe figcaption {
+	top: auto;
+	bottom: 0;
+	padding: 0;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.55);
+	color: #3c4a50;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+.places-to-visit figure.effect-zoe h4 {
+	text-align: center;
+	font-size: 35px;
+	color: #FFF;
+	margin-top: 3.4em;
+}
+.places-to-visit figure.effect-zoe h4 {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+.places-to-visit figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h4 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+.places-to-visit figure.effect-zoe:hover h4 {
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+/*-- //Places to visit --*/
+
+.footer {
+    background: #303030;
+    padding: 3em 0;
+    margin-top: 3em;
+}
+.footer h6 {
+    font-size: 1.7em;
+    background: #506B7B;
+    padding: 0.5em 1.7em;
+    font-weight: 700;
+    color: #fff;
+}
+.footer p {
+    font-size: 0.875em;
+    color: #fff;
+    margin: 1em 0;
+    line-height: 1.8em;
+}
+.footer-middle p {
+    margin: 0;
+}
+.footer h4 {
+    font-size: 1.7em;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+.mid-bottom {
+    margin-bottom: 1em;
+}
+.footer-right li a {
+    color: #fff;
+    font-size: 0.875em;
+    line-height: 1.8em;
+}
+.footer-right li a:hover{
+    color: #506B7B;
+}
+.footer-right li {
+	display:block;
+}
+.name  form input[type="text"] {
+  width: 100%;
+  color: #333333 ! important;
+  outline: none;
+  font-size: 16px;
+  padding: .5em;
+  border: none;
+  -webkit-appearance: none;
+  margin-bottom:0.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+.name form input[type="submit"] {
+  background:#506B7B;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+.name form input[type="submit"]:hover{
+	background:#000000;
+}
+.copyright {
+    background:#0a0a0a;
+    padding: 1em 0;
+    text-align: center;
+}
+.copyright p {
+    font-size: 0.875em;
+    color: #ffffff;
+    line-height: 1.8em;
+}
+/*--//footer--*/
+
+/*--forms--*/
+
+.form-box {
+	margin: 80px;
+}
+.form-box p{
+	color:#506B7B;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.3em;
+}
