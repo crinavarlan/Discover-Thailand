@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% load staticfiles %}
+
 {% block head_js %}
 <script src="https://js.stripe.com/v2/" type="text/javascript"></script>
 <script type="text/javascript">
@@ -16,10 +17,10 @@
             <div class="col-sm-4"></div>
                 <div class="name col-sm-4">
                     <form role="form" method="post" id="register-form" action="{% url 'register' %}" enctype="multipart/form-data">
-                        <div id="credit-card-errors" style="display:none">
                             <div class="alert-message block-message error" id="stripe-error-message"></div>
-                        </div>
-                        <legend><p>Create a new account</p></legend>
+                        <legend>
+                            <p>Create a new account</p>
+                        </legend>
                         {% csrf_token %}
                         {{ form|as_bootstrap }}
                         <div class="form-group">

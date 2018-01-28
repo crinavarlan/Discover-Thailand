@@ -1,5 +1,48 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% load gravatar %}
 {% block content %}
-    <h2>Success!</h2>
-    <p>You are logged in as {{ user.email }} </p>
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1>My Profile</h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item active">My Profile</li>
+        </ol>
+
+        <!-- Content Row -->
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <a class="story-img" href="#">
+                    <img src="{% gravatar_url user.email %}"
+                         style="width:200px; height: 200px; background-color: #12ABB2; color: #ffffff;"
+                         class="img-circle">
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-12 borderleft">
+                <p class="browseads advertiserdetails"><strong>Username: </strong>{{ user.username }}</p>
+                <p class="browseads advertiserdetails"><strong>Email address: </strong>{{ user.email }}</p>
+                <p class="browseads"><a href="{% url 'cart' %}"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Go to my cart</a></p>
+                <p class="browseads"><a href="{% url 'password_reset' %}"><i class="fa fa-lock" aria-hidden="true"></i>
+                    Reset my password</a></p>
+                <p class="myadverts"><strong>My listed adverts:</strong></p>
+                {% for advert in adverts %}
+                    {% if user.id == advert.advertiser_id %}
+                        <p class="browseads"><strong>Advert title: </strong>{{ advert.item }}</p>
+                        <p class="browseads"><strong>Rental rate: </strong>&euro;{{ advert.daily_rental_rate }}</p>
+                        <button class="btn btn-success" onclick="location.href='{% url 'edit_ad' advert.id %}'">Edit
+                            ad
+                        </button>
+                        <hr>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <!-- End of Content -->
+    </div>
 {% endblock %}

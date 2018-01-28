@@ -19,14 +19,15 @@ from home import views as home_views
 from contact import views as contact_views
 from blog import views as blog_views
 from django.contrib import admin
-from django.conf.urls import url
 from .settings import MEDIA_ROOT
 from django.views.static import serve
+from django.conf.urls import url, include
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home_views.get_home, name='home'),
+    url(r'^pages/', include('django.contrib.flatpages.urls')),
 
     # authentication url
     url(r'^register/$', accounts_views.register, name='register'),
