@@ -26,6 +26,7 @@ SECRET_KEY = 'n3p6kv-%f)bhuc1r)1p%p!ykhior(2fmi*)7dwxssgwp$=ze&q'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+SITE_ID = 1
 
 
 # Application definition
@@ -38,10 +39,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_forms_bootstrap',
+    'django.contrib.sites',
+    'disqus',
     'home',
     'accounts',
     'contact',
+    'blog',
 ]
+
+AUTH_USER_MODEL = 'accounts.User'
+AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',
+                           'accounts.backends.EmailAuth',)
+LOGIN_URL = '/login/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -73,6 +82,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'discover_thailand.wsgi.application'
 
+DISQUS_WEBSITE_SHORTNAME = 'DiscoverThailand'
+
+
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
@@ -103,7 +115,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = 'accounts.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -127,7 +138,16 @@ STATIC_ROOT = ''
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
-AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend',
-    'accounts.backends.EmailAuth',
-)
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "vendors", "js", "tinymce", "tinymce.min.js")
+
+# Setting for sending emails: Contact form.
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'test@example.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_PORT = 1025
+

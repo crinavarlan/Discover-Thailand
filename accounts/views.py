@@ -28,12 +28,7 @@ def register(request):
     args = {'form': form}
     args.update(csrf(request))
 
-    return render(request, 'register.html', args)
-
-
-@login_required(login_url='/login/')
-def profile(request):
-    return render(request, 'profile.html')
+    return render(request, 'account/register.html', args)
 
 
 def login(request):
@@ -55,10 +50,16 @@ def login(request):
 
     args = {'form': form}
     args.update(csrf(request))
-    return render(request, 'login.html', args)
+    return render(request, 'account/login.html', args)
+
+
+@login_required(login_url='/login/')
+def profile(request):
+    return render(request, 'account/profile.html')
 
 
 def logout(request):
     auth.logout(request)
     messages.success(request, 'You have successfully logged out')
     return redirect(reverse('home'))
+

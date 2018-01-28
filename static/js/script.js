@@ -14,4 +14,3 @@ $('.rslides').responsiveSlides({
         $('.events').append("<li>after event fired.</li>");
     }
 });
-

@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
 }
-
 .navbar{
 	background-color: black;
 	height: 70px;
@@ -267,9 +266,39 @@ figure.effect-zoe:hover h4 {
 .form-box {
 	margin: 80px;
 }
-.form-box p{
+.form-box p {
 	color:#506B7B;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.3em;
 }
+/*--blog--*/
+.blog-posts {
+	margin: 70px;
+	border-color: transparent;
+	border-radius: 0;
+}
+.post-img {
+	display: block;
+    margin-top: 25%;
+}
+
+/*!*--blog right--*!
+.new-post-right {
+		padding-top: 1%;
+		padding-right: 5%;
+		padding-bottom: 1%;
+}
+.new-post-right p {
+		margin-top: 10%;
+}
+.new-post-right table {
+		margin-top: 10%;
+}
+.new-post-right section {
+		margin-top: 12%;
+}
+.new-post-right section ul {
+		line-height: 20%;
+}*/
+
