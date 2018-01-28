@@ -18,6 +18,7 @@ from accounts import views as accounts_views
 from home import views as home_views
 from contact import views as contact_views
 from blog import views as blog_views
+from about import views as about_views
 from django.contrib import admin
 from .settings import MEDIA_ROOT
 from django.views.static import serve
@@ -37,6 +38,9 @@ urlpatterns = [
 
     # contact url
     url(r'^contact/$', contact_views.contact, name='contact'),
+
+    # about url
+    url(r'^about/$', about_views.about, name='about'),
 
     # blog url
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),

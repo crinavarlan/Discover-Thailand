@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'accounts',
     'contact',
     'blog',
+    'about',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'

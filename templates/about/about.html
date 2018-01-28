@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% load staticfiles %}
 
-</body>
-</html>
+{% block content %}
+
+	<!-- About -->
+	<div class="about">
+		    <h3 class="tittle">THAILAND TRAVEL: YOUR COMPLETE GUIDE</h3>
+		    <div class="banner_bottom_right">
+			    <div class="callbacks_container">
+				    <ul class="rslides" id="slider">
+					    <li><img src="{% static 'images/bann1.jpg' %}" class="img-responsive banner" alt="Banner 1"></li>
+                        <li><img src="{% static 'images/bann2.jpg' %}" class="img-responsive banner" alt="Banner 2"></li>
+                        <li><img src="{% static 'images/bann3.jpg' %}" class="img-responsive banner" alt="Banner 3"></li>
+				    </ul>
+			    </div>
+		    </div>
+		    <div class="col-md-7 banner_bottom_left">
+			    <h3>Making the most out of your holiday</h3>
+			    <p class="para-agileits"> Thailand is a country in Southeast Asia with coasts on the Andaman Sea and the Gulf
+                    of Thailand. It borders Myanmar (Burma) to the northwest, Laos to the northeast, Cambodia to the southeast
+                    and Malaysia to the south. </p>
+			    <p class="para-agileits">With great food, a tropical climate, fascinating culture, majestic mountains
+                    and great beaches, Thailand is a magnet for travellers around the world.
+                    Overall, Thailand speaks for itself. When you hear its name, you already think about beaches, beauty,
+                    jungles, and food.And since it covers almost 200,000 square miles, there's enough to go around...</p>
+		    </div>
+        <div class="clearfix"> </div>
+    </div>
+
+
+{% endblock %}
