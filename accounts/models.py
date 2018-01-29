@@ -28,3 +28,7 @@ class AccountUserManager(UserManager):
 class User(AbstractUser):
     stripe_id = models.CharField(max_length=40, default='')
     objects = AccountUserManager()
+    user_prof_img = models.ImageField('user_prof_img', upload_to='static/images/profiles/', null=True,
+                                            blank=True)
+    city = models.CharField(max_length=60, default='')
+    country = models.CharField(max_length=60, default='')

@@ -18,7 +18,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar{
 	background-color: black;
-	height: 70px;
 	font-family: 'Oswald', sans-serif;
 	font-size: 1em;
 }
@@ -272,12 +271,11 @@ figure.effect-zoe:hover h4 {
 }
 /*--//footer--*/
 
-/*--forms--*/
 
 /*--about--*/
 .about {
 	position: relative;
-	padding: 6em 0em;
+	padding: 6em 0;
 }
 h3.tittle {
 	color: #000000;
@@ -390,6 +388,7 @@ p.para-agileits {
 }
 /*-- //about --*/
 
+/*--form box for contact, login and register--*/
 .form-box {
 	margin: 80px;
 }
@@ -399,6 +398,34 @@ p.para-agileits {
 	font-weight: bold;
 	font-size: 1.3em;
 }
+/*--//form box--*/
+
+/*--contact--*/
+.map img{
+    padding-left: 80px;
+}
+
+/*--user profile--*/
+.profile-box {
+    margin: 70px;
+    width: 50px;
+}
+.profile-header {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 10px;
+}
+.profile-header li {
+    list-style: none;
+    float: left;
+    font-size: 1.3em;
+    padding: 10px;
+}
+.profile-header li a {
+    text-decoration: none;
+}
+
+
 /*--blog--*/
 .blog-posts {
 	margin: 70px;
@@ -407,13 +434,16 @@ p.para-agileits {
 }
 .post-img {
 	display: block;
-    margin-top: 25%;
+    margin-top: 20%;
 }
-
-
-@media(max-width:1440px) {
+.blog-img{
 
 }
+/*--//blog--*/
+
+
+/*--responsive--*/
+@media(max-width:1440px) { }
 
 @media(max-width:1366px) {
 	.banner_bottom_left {
@@ -423,15 +453,10 @@ p.para-agileits {
 		font-size: 2.6em;
 		margin-bottom: 1em;
 	}
-
 }
-
-@media(max-width:1280px) {
-
-}
+@media(max-width:1280px) {  }
 
 @media(max-width:1080px) {
-
 	.banner {
 		min-height: 300px;
 	}
@@ -449,7 +474,6 @@ p.para-agileits {
 		font-size: 30px;
 	}
 }
-
 @media(max-width:1050px) {
 	.slider-info h3 {
 		font-size: 2.5em;
@@ -461,7 +485,6 @@ p.para-agileits {
 		margin-bottom: 0.5em;
 	}
 }
-
 @media(max-width:1024px) {
 	.places-to-visit figure.effect-zoe h4 {
 		margin-top: 3.3em;
@@ -473,7 +496,6 @@ p.para-agileits {
     font-size: 0.85em;
 	}
 }
-
 @media(max-width:991px) {
 	.navbar-default .navbar-collapse,
 	.navbar-default .navbar-form {
@@ -509,9 +531,8 @@ p.para-agileits {
 	.footer-left,.footer-middle,.footer-right {
     float: left;
     width: 33.33%;
+    }
 }
-}
-
 @media(max-width:900px) {
 	.places-to-visit .grid figure {
 		width: 32.1%;
@@ -539,7 +560,6 @@ p.para-agileits {
 		font-size: 26px;
 	}
 }
-
 @media(max-width:768px) {
 	.places-to-visit {
 		padding: 50px 0;
@@ -555,7 +575,6 @@ p.para-agileits {
 		margin-top: 3em;
 	}
 }
-
 @media(max-width:767px) {
 	.navbar-collapse.in {
 		overflow-y: hidden;
@@ -586,7 +605,6 @@ p.para-agileits {
 		border-color: transparent;
 	}
 }
-
 @media(max-width:736px) {
 	.slider-info h3 {
 		letter-spacing: 1px;
@@ -609,7 +627,6 @@ p.para-agileits {
     font-size: 1.4em;
 	}
 }
-
 @media(max-width:667px) {
 	.slider-info h3 {
 		font-size: 2em;
@@ -650,7 +667,6 @@ p.para-agileits {
 		font-size: 22px;
 	}
 }
-
 @media(max-width:568px) {
 	h3.tittle {
 		font-size: 2.1em;

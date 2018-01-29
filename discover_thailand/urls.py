@@ -35,6 +35,7 @@ urlpatterns = [
     url(r'^profile/$', accounts_views.profile, name='profile'),
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
+    url('^', include('django.contrib.auth.urls')),
 
     # contact url
     url(r'^contact/$', contact_views.contact, name='contact'),
