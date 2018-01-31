@@ -4,44 +4,30 @@
 {% block content %}
 
     <div class="container">
-    <h1>My Profile</h1>
-
-        <div class="profile-header">
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li> / </li>
-                <li>My Profile</li>
-            </ul>
-         </div>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item active">My Profile</li>
+        </ol>
 
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-12">
-                <div class="story-img">
-                                <div class="row">
-                <div class="col-lg-3">
+            <div class="col-sm-12">
+                <a class="story-img" href="#">
                     {% if not user.user_prof_pic %}
-                      <img class="post-img img-circle" src="http://placehold.it/100">
+                        <img class="post-img img-circle" src="http://placehold.it/100">
                     {% else %}
                         <img src="/{{ user.user_prof_pic }}" height="70px" width="70px">
                     {% endif %}
-                </div>
-
-                <div class="col-lg-9 full-name-profile">
-                    <p><b>{{ user.first_name }} {{ user.last_name }}</b></p>
-                </div>
+                </a>
             </div>
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-8 col-sm-12">
-                <p class=""><strong>Username: </strong>{{ user.username }}</p>
-                <p class=""><strong>Email address: </strong>{{ user.email }}</p>
-                <p class=""><a href="{% url 'password_reset' %}"><i class="fa fa-lock" aria-hidden="true"></i>
+            <div class="col-sm-12">
+                <p><strong>Username: </strong>{{ user.username }}</p>
+                <p><strong>Email address: </strong>{{ user.email }}</p>
+                <p><a href="{% url 'password_reset' %}"><i class="fa fa-lock" aria-hidden="true"></i>
                     Reset my password</a></p>
             </div>
         </div>
     </div>
-
-
-
 
 {% endblock %}
