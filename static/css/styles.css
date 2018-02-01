@@ -467,6 +467,16 @@ p.para-agileits {
 	margin: 40px;
 	text-align: center;
 }
+.blogposts h3 {
+	font-weight: bold;
+	margin: 40px;
+}
+.blogposts {
+	margin: 40px;
+}
+.blogposts img{
+	margin-top: 60px;
+}
 
 /*--blog edit--*/
 .edit-blog h1{
