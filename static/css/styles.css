@@ -1,6 +1,7 @@
 html,
 body {
 	margin: 0;
+	padding: 0;
 	background: #fff;
 	font-family: 'Oswald', sans-serif;
 }
@@ -204,7 +205,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 1em;
 }
 .mid-bottom {
-    margin-bottom: 1em;
+    margin-bottom: 10px;
+	margin-top: 20px;
 }
 .footer-right li a {
     color: #fff;
@@ -253,9 +255,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     line-height: 1.8em;
 }
-.mid-btm {
-	margin-top: 20px;
-}
+
 /*--//footer--*/
 
 
@@ -454,18 +454,27 @@ p.para-agileits {
 }
 
 /*--blog--*/
+/*--blog details--*/
 .blog-posts {
-	margin: 70px;
 	border-color: transparent;
 	border-radius: 0;
 }
-.post-img {
-	display: block;
-    margin-top: 20%;
+.blog-details{
+	margin-top: 80px;
 }
-.blog-img{
+.posts h3{
+	font-weight: bold;
+	margin: 40px;
+	text-align: center;
+}
 
+/*--blog edit--*/
+.edit-blog h1{
+	margin: 50px;
+	text-align: center;
 }
+
+
 /*--//blog--*/
 
 
