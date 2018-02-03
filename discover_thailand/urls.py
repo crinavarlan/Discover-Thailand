@@ -23,6 +23,9 @@ from django.contrib import admin
 from .settings import MEDIA_ROOT
 from django.views.static import serve
 from django.conf.urls import url, include
+from paypal.standard.ipn import urls as paypal_urls
+from paypal_store import views as paypal_views
+from products import views as product_views
 
 
 urlpatterns = [
@@ -50,6 +53,14 @@ urlpatterns = [
     url(r'^blog/top', blog_views.top_posts),
     url(r'^post/new/$', blog_views.new_post, name='new_post'),
     url(r'^blog/(?P<id>\d+)/edit$', blog_views.edit_post),
+
+    # paypal
+    url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
+    url(r'^paypal-return', paypal_views.paypal_return),
+    url(r'^paypal-cancel', paypal_views.paypal_cancel),
+
+    # products
+    url(r'^products/$', product_views.all_products)
 ]
 
 

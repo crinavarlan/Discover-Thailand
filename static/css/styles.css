@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
 }
+.bold {
+	font-weight: bold;
+}
 .navbar {
 	background-color: black;
 	font-family: 'Oswald', sans-serif;
@@ -28,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-header a {
 	text-decoration: none;
 	font-size: 1.7em;
-	font-weight: bold;
+
 }
 /*--carousel slide--*/
 .carousel-caption > h3 {
@@ -451,6 +454,31 @@ p.para-agileits {
 
 .container ol li {
 	text-decoration: none;
+}
+.profile-header {
+	width: 500px;
+	padding-top: 50px;
+
+}
+.profile-header ol li {
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: #CCCCCC;
+    font-size: 20px;
+}
+.profile-header ol li a {
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: #CCCCCC;
+    font-size: 25px;
+}
+.profile-header ol li a :hover {
+    color: #506B7B;
+}
+
+.products {
+	margin-top: 80px;
 }
 
 /*--blog--*/
