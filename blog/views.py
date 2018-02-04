@@ -33,7 +33,7 @@ def new_post(request):
             return redirect(post_detail, post.pk)
     else:
         form = BlogPostForm()
-        return render(request, 'blog/blogpostform.html', {'form': form})
+        return render(request, 'blog/blogpostnew.html', {'form': form})
 
 
 def edit_post(request, id):

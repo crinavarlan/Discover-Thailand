@@ -14,10 +14,11 @@
                     <br>
                     <p>{{ post.content|linebreaks }}</p>
                 <br>
-                <button class="btn btn-outline-primary" onclick="location.href='/blog'">Back To Blog</button>
+                    <button class="btn btn-outline-primary" onclick="location.href='/blog'">Back To Blog</button>
 
                 {% if user.is_authenticated %}
                      <button class="btn btn-outline-primary" onclick="location.href='edit'">Edit</button>
+                     <a href="{% url 'new_post'  %}"  class="btn btn-outline-primary">New post</a>
                 {% endif %}
 
                     <br>
