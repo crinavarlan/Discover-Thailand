@@ -19,13 +19,13 @@ from home import views as home_views
 from contact import views as contact_views
 from blog import views as blog_views
 from about import views as about_views
+from products import views as products_views
 from django.contrib import admin
 from .settings import MEDIA_ROOT
 from django.views.static import serve
 from django.conf.urls import url, include
 from paypal.standard.ipn import urls as paypal_urls
 from paypal_store import views as paypal_views
-from products import views as product_views
 
 
 urlpatterns = [
@@ -46,6 +46,10 @@ urlpatterns = [
     # about url
     url(r'^about/$', about_views.about, name='about'),
 
+    # products url
+    url(r'^products/$', products_views.all_products, name='products'),
+
+
     # blog url
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
     url(r'^blog/$', blog_views.post_list),
@@ -58,9 +62,6 @@ urlpatterns = [
     url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
     url(r'^paypal-return', paypal_views.paypal_return),
     url(r'^paypal-cancel', paypal_views.paypal_cancel),
-
-    # products
-    url(r'^products/$', product_views.all_products)
 ]
 
 
