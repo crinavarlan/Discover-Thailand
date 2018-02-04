@@ -1,7 +1,7 @@
 from .models import BlogPost
 from django.test import TestCase
 from blog.views import post_list
-from django.core.urlresolvers import resolve
+from django.urls import resolve
 
 
 class BlogPostTests(TestCase):
@@ -12,7 +12,7 @@ class BlogPostTests(TestCase):
                          'My Latest Blog BlogPost')
 
     def test_about_page(self):
-            about_page = resolve('/about/')
+            about_page = resolve('/blog/')
             self.assertEqual(about_page.func, post_list)
 
     def test_home_page_status_code_is_not_404(self):

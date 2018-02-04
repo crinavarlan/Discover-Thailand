@@ -1,6 +1,5 @@
 from .forms import UserRegistrationForm
 from django.test import TestCase
-from django.conf import settings
 from django import forms
 
 
@@ -10,7 +9,6 @@ class CustomUserTest(TestCase):
             'email': 'tester@test.com',
             'password1': 'test123',
             'password2': 'test123',
-            'stripe_id': settings.STRIPE_SECRET,
             'credit_card_number': 4242424242424242,
             'cvv': 123,
             'expiry_month': 9,
@@ -20,9 +18,8 @@ class CustomUserTest(TestCase):
 
     def test_registration_form_fails_with_missing_email(self):
         form = UserRegistrationForm({
-            'password1': 'Iwillenter_1',
-            'password2': 'Iwillenter_1',
-            'stripe_id': settings.STRIPE_SECRET,
+            'password1': 'test123',
+            'password2': 'test123',
             'credit_card_number': 4242424242424242,
             'cvv': 123,
             'expiry_month': 1,
@@ -35,9 +32,8 @@ class CustomUserTest(TestCase):
 
     def test_registration_fails_with_empty_password1(self):
         form = UserRegistrationForm({
-            'email': 'professional_tester@test.com',
-            'password2': 'Iwillenter_1',
-            'stripe_id': settings.STRIPE_SECRET,
+            'email': 'tester@test.com',
+            'password2': 'test123',
             'credit_card_number': 4242424242424242,
             'cvv': 123,
             'expiry_month': 1,
@@ -50,9 +46,8 @@ class CustomUserTest(TestCase):
 
     def test_registration_fails_with_empty_password2(self):
         form = UserRegistrationForm({
-            'email': 'professional_tester@test.com',
-            'password1': 'Iwillenter_1',
-            'stripe_id': settings.STRIPE_SECRET,
+            'email': 'tester@test.com',
+            'password1': 'test123',
             'credit_card_number': 4242424242424242,
             'cvv': 123,
             'expiry_month': 1,
