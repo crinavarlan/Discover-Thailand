@@ -543,10 +543,85 @@ p.para-agileits {
 	margin: 50px;
 	text-align: center;
 }
-
-
 /*--//blog--*/
 
+/*--products-top--*/
+.products-top {
+	background: #303030;
+	padding: 30px 0;
+}
+.products-top h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	color: #FFF;
+	text-align: center;
+}
+.products-top h4 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCC;
+	color: #FFF;
+	width: 73%;
+	margin: 0 auto 50px;
+	text-align: center;
+}
+.products-top-grid-1 h3 {
+	text-align: left;
+	margin-bottom: 30px;
+	color: #FFF;
+	font-size: 25px;
+}
+
+.products-top-grid-1 p {
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #EEE;
+	padding-right: 75px;
+	margin-bottom: 75px;
+}
+
+.products-top-grid-2 h3 {
+	text-align: left;
+	margin-bottom: 10px;
+	color: #FFF;
+	font-size: 18px;
+}
+
+.products-top-grid-2 p {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 25px;
+	color: #EEE;
+	padding-right: 0;
+	margin-bottom: 30px;
+}
+
+.products-top-grid-2 p.bottom-p {
+	margin-bottom: 0;
+}
+
+.products-top-grid-1 button.btn {
+	padding: 20px 50px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.38);
+	border-radius: 50px;
+	outline: none;
+}
+
+.products-top-grid-1 button.btn:hover {
+	border-color: #FFF;
+}
+
+.products-top-grid-1 button.btn i.fa {
+	margin-left: 10px;
+}
+
+
+/*-- //About --*/
 
 /*--responsive--*/
 @media(max-width:1440px) { }
@@ -581,6 +656,25 @@ p.para-agileits {
 	.places-to-visit figure.effect-zoe h4 {
 		margin-top: 3.25em;
 		font-size: 30px;
+	}
+	.products-top h4 {
+		font-size: 17px;
+		width: 81%;
+		margin-bottom: 40px;
+	}
+	.products-top-grid-1 p {
+		font-size: 16px;
+	}
+	.products-top-grid-1 button.btn {
+		padding: 15px 40px;
+	}
+	.products-top-grid-2 h3 {
+		margin-bottom: 7px;
+	}
+	.products-top-grid-2 p {
+		font-size: 14px;
+		line-height: 23px;
+		margin-bottom: 25px;
 	}
 }
 @media(max-width:1050px) {
@@ -650,6 +744,14 @@ p.para-agileits {
     float: left;
     width: 33.33%;
     }
+	.products-top-grid-1, .products-top-grid-2 {
+		width: 50%;
+		float: left;
+		padding: 0;
+	}
+	.products-top h4 {
+		width: 83%;
+	}
 }
 @media(max-width:900px) {
 	.places-to-visit .grid figure {
@@ -686,6 +788,9 @@ p.para-agileits {
 	.about-grid p {
 		font-size: 0.97em;
 	}
+	.products-top h4 {
+		width: 100%;
+	}
 }
 @media(max-width:768px) {
 	.places-to-visit {
@@ -709,6 +814,36 @@ p.para-agileits {
 	}
 	.about-grid p {
 		font-size: 0.97em;
+	}
+	.products-top h2 {
+		font-size: 35px;
+	}
+	.products-top h4 {
+		font-size: 16px;
+		font-weight: 300;
+		margin-bottom: 30px;
+	}
+	.products-top-grid-1, .products-top-grid-2 {
+		width: 100%;
+	}
+	.products-top-grid-1 h3 {
+		margin-bottom: 10px;
+	}
+	.products-top-grid-1 p {
+		font-size: 15px;
+		padding: 0;
+		line-height: 25px;
+		margin-bottom: 15px;
+	}
+	.products-top-grid-1 button.btn {
+		padding: 12px 40px;
+	}
+	.products-top-grid-2 {
+		margin-top: 40px;
+	}
+	.products-top-grid-2 h3 {
+		margin-bottom: 10px;
+		font-size: 20px;
 	}
 }
 @media(max-width:767px) {
