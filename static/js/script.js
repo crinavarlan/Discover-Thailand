@@ -14,3 +14,15 @@ $('.rslides').responsiveSlides({
         $('.events').append("<li>after event fired.</li>");
     }
 });
+
+
+
+$(function () {
+    $("#slider").responsiveSlides({
+        auto: true,
+        nav: true,
+        speed: 2000,
+        namespace: "callbacks",
+        pager: true
+    });
+});

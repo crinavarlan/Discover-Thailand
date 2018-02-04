@@ -17,9 +17,30 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
 }
+p{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover,body a:focus{
+	text-decoration:none;
+	outline: none;
+}
 .bold {
 	font-weight: bold;
 }
+
+/*--button--*/
+.btn {
+    background: #506B7B;
+    padding: 0.3em 1.8em;
+	display:inline-block;
+    color: #fff;
+}
+
+/*--navigation bar--*/
 .navbar {
 	background-color: black;
 	font-family: 'Oswald', sans-serif;
@@ -124,6 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 32.4%;
 	margin: 5px;
 }
+
 .places-to-visit .grid figure img {
 	position: relative;
 	display: block;
@@ -171,6 +193,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 35px;
 	color: #FFF;
 	margin-top: 3.4em;
+}
+.places-to-visit figure.effect-zoe h4 {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+.places-to-visit figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h4 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
 }
 .places-to-visit figure.effect-zoe:hover h4 {
 	-webkit-transition-delay: 0.5s;
@@ -455,10 +490,11 @@ p.para-agileits {
 .container ol li {
 	text-decoration: none;
 }
+.container {
+	padding-top: 50px;
+}
 .profile-header {
 	width: 500px;
-	padding-top: 50px;
-
 }
 .profile-header ol li {
     padding: 12px 0;
@@ -475,10 +511,6 @@ p.para-agileits {
 }
 .profile-header ol li a :hover {
     color: #506B7B;
-}
-
-.products {
-	margin-top: 80px;
 }
 
 /*--blog--*/
