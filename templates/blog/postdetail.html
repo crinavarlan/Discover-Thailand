@@ -13,8 +13,13 @@
                     {% endif %}
                     <br>
                     <p>{{ post.content|linebreaks }}</p>
-                    <button class="btn btn-outline-primary" onclick="location.href='/blog'">Back To Blog</button>
-                    <button class="btn btn-outline-primary" onclick="location.href='edit'">Edit</button>
+                <br>
+                <button class="btn btn-outline-primary" onclick="location.href='/blog'">Back To Blog</button>
+
+                {% if user.is_authenticated %}
+                     <button class="btn btn-outline-primary" onclick="location.href='edit'">Edit</button>
+                {% endif %}
+
                     <br>
                 <br>
                     <p>{{ post.published_date }} | Views {{ post.views }}</p>
@@ -25,8 +30,7 @@
                     <br>
                 </div>
                 <div class="col-sm-2"></div>
-            </div>
+        </div>
   </div>
-
 {% endblock %}
 

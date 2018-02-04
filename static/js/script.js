@@ -16,13 +16,3 @@ $('.rslides').responsiveSlides({
 });
 
 
-
-$(function () {
-    $("#slider").responsiveSlides({
-        auto: true,
-        nav: true,
-        speed: 2000,
-        namespace: "callbacks",
-        pager: true
-    });
-});

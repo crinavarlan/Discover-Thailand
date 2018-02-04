@@ -2,7 +2,6 @@
 {% block content %}
 
     {% for post in posts %}
-        <hr>
         <div class="container blogposts text-justify">
             <div class="col-md-3 col-sm-4">
                 {% if post.image %}
@@ -25,5 +24,4 @@
       <div class="col-sm-2"></div>
         </div>
     {% endfor %}
-    {% comment %}<button class="btn btn-default" onclick="location.href='{% url 'new_post' %}'">New Post</button>{% endcomment %}
 {% endblock %}
