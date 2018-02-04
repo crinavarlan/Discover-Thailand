@@ -1,15 +1,24 @@
-from django.test import TestCase
 from .models import BlogPost
+from django.test import TestCase
+from blog.views import post_list
+from django.core.urlresolvers import resolve
 
 
 class BlogPostTests(TestCase):
-    """
-    Here we'll define the tests
-    that we'll run against our BlogPost model
-    """
 
+    def test_str(self):
+        test_title = BlogPost(title='My Latest Blog BlogPost')
+        self.assertEqual(str(test_title),
+                         'My Latest Blog BlogPost')
 
-def test_str(self):
-    test_title = BlogPost(title='My Latest Blog BlogPost')
-    self.assertEqual(str(test_title),
-                     'My Latest Blog BlogPost')
+    def test_about_page(self):
+            about_page = resolve('/about/')
+            self.assertEqual(about_page.func, post_list)
+
+    def test_home_page_status_code_is_not_404(self):
+            home_page = self.client.get('/')
+            self.assertNotEquals(home_page.status_code, 404)
+
+    def test_home_page_status_code_is_not_500(self):
+            home_page = self.client.get('/')
+            self.assertNotEquals(home_page.status_code, 500)

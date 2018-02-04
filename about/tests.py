@@ -1,5 +1,5 @@
 from django.test import TestCase
-from about.views import about_map
+from about.views import about
 from django.core.urlresolvers import resolve
 
 
@@ -7,7 +7,7 @@ class HomePageTest(TestCase):
 
     def test_about_page(self):
         about_page = resolve('/about/')
-        self.assertEqual(about_page.func, about_map)
+        self.assertEqual(about_page.func, about)
 
     def test_home_page_status_code_is_not_404(self):
         home_page = self.client.get('/')
