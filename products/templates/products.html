@@ -3,7 +3,7 @@
 
 
     <!-- Products top box -->
-	<div class="products-top" id="products-top">
+	<div class="products-top">
 		<div class="container">
 
 			<h2>Fun activities perfect for you </h2>
@@ -13,7 +13,8 @@
 					<h3>Visit some islands</h3>
 					<p>Do you want to visit some Thailand islands but you are confused where to go? I understand you.
                         There are so many islands to choose from, and looking at the map can be overwhelming.
-                        We have some products that can help you decide where to go!</p>
+                        We have some products that can help you decide where to go!
+                    </p>
 				</div>
 				<div class="col-md-6 products-top-grid products-top-grid-2">
 					<h3>Islands in the Andaman Coast, Thailand <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></h3>
@@ -23,36 +24,42 @@
 					<h3>Best way to get to Thailand’s Andaman coast <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></h3>
 					<p>The easier and direct way is definitely by plane. Phuket and Krabi
                         airports have several direct international flights. If you want to see more, to visit different islands
-                        and escape the crowds you should check our trips below </p>
+                        and escape the crowds you should check our trips below
+                    </p>
 				</div>
-				<div class="clearfix"></div>
 			</div>
+
 		</div>
 	</div>
+
 	<!-- //Products top box -->
 
     <!-- Products description and price -->
-    <div class="container">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Price</th>
-                    <th>Purchase</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for product in products %}
-                    <tr>
-                        <td class="bold">{{ product.name }}</td>
-                        <td>{{ product.description }}</td>
-                        <td>£{{ product.price }}</td>
-                        <td>{{ product.paypal_form.sandbox }}</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
+    {% comment %}<div class="products-table">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-responsive table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Purchase</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for product in products %}
+                            <tr>
+                                <td class="products-name bold">{{ product.name }}</td>
+                                <td class="products-description">{{ product.description }}</td>
+                                <td class="products-price">£{{ product.price }}</td>
+                                <td class="products-purchase">{{ product.paypal_form.sandbox }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>{% endcomment %}
      <!-- //Products description and price -->
 {% endblock %}

@@ -31,7 +31,6 @@ body a:hover,body a:focus{
 .bold {
 	font-weight: bold;
 }
-
 /*--button--*/
 .btn {
     background: #506B7B;
@@ -39,7 +38,6 @@ body a:hover,body a:focus{
 	display:inline-block;
     color: #fff;
 }
-
 /*--navigation bar--*/
 .navbar {
 	background-color: black;
@@ -120,6 +118,7 @@ body a:hover,body a:focus{
 	margin: 0 auto;
 	width: 100%;
 	padding: 0;
+	text-align: justify;
 }
 .places-to-visit .grid {
 	position: relative;
@@ -300,9 +299,9 @@ figure.effect-zoe:hover h4 {
 /*--about--*/
 .about {
 	position: relative;
-	padding: 6em 0;
+	padding: 30px 0;
 }
-h3.tittle {
+.about-title {
 	color: #000000;
 	font-size: 2.8em;
 	text-align: center;
@@ -545,10 +544,11 @@ p.para-agileits {
 }
 /*--//blog--*/
 
+/*--products--*/
 /*--products-top--*/
 .products-top {
 	background: #303030;
-	padding: 30px 0;
+	padding: 30px 0%;
 }
 .products-top h2 {
 	font-size: 40px;
@@ -573,7 +573,6 @@ p.para-agileits {
 	color: #FFF;
 	font-size: 25px;
 }
-
 .products-top-grid-1 p {
 	font-size: 17px;
 	font-weight: 300;
@@ -582,14 +581,12 @@ p.para-agileits {
 	padding-right: 75px;
 	margin-bottom: 75px;
 }
-
 .products-top-grid-2 h3 {
 	text-align: left;
 	margin-bottom: 10px;
 	color: #FFF;
 	font-size: 18px;
 }
-
 .products-top-grid-2 p {
 	font-size: 15px;
 	font-weight: 300;
@@ -598,41 +595,62 @@ p.para-agileits {
 	padding-right: 0;
 	margin-bottom: 30px;
 }
-
 .products-top-grid-2 p.bottom-p {
 	margin-bottom: 0;
 }
 
-.products-top-grid-1 button.btn {
-	padding: 20px 50px;
-	font-family: 'Montserrat', sans-serif;
-	background-color: transparent;
-	border: 2px solid rgba(255, 255, 255, 0.38);
-	border-radius: 50px;
-	outline: none;
+/*--products table--*/
+.products-table {
+    padding: 1% 4%;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+.products-name {
+    width: 10%;
 }
 
-.products-top-grid-1 button.btn:hover {
-	border-color: #FFF;
+.products-description {
+    width: 50%;
 }
 
-.products-top-grid-1 button.btn i.fa {
-	margin-left: 10px;
+.products-price {
+    width: 5%;
 }
 
+.products-purchase {
+    width: 15%;
+}
+/*--//products-top--*/
+/*--products table--*/
 
-/*-- //About --*/
+.products-table {
+		padding: 1% 4%;
+		margin-top: 6%;
+		margin-bottom: 5%;
+	}
+
+/*--//products table--*/
+/*-- //products --*/
+
 
 /*--responsive--*/
-@media(max-width:1440px) { }
-
+@media(max-width:1440px) {
+    .banner_bottom_right {
+		width: 100%;
+		position: initial;
+	}
+    .banner_bottom_left {
+        width: 100%;
+	}
+    .about-title {
+		font-size: 2.8em;
+		margin-bottom: 1em;
+        text-align: center;
+	}
+}
 @media(max-width:1366px) {
 	.banner_bottom_left {
 		padding: 6em 6em 6em 7em;
-	}
-	h3.tittle {
-		font-size: 2.6em;
-		margin-bottom: 1em;
 	}
 	.wrap {
 		width:90%;
@@ -657,6 +675,9 @@ p.para-agileits {
 		margin-top: 3.25em;
 		font-size: 30px;
 	}
+    .products-top {
+		padding: 75px 0;
+	}
 	.products-top h4 {
 		font-size: 17px;
 		width: 81%;
@@ -664,9 +685,6 @@ p.para-agileits {
 	}
 	.products-top-grid-1 p {
 		font-size: 16px;
-	}
-	.products-top-grid-1 button.btn {
-		padding: 15px 40px;
 	}
 	.products-top-grid-2 h3 {
 		margin-bottom: 7px;
@@ -720,7 +738,7 @@ p.para-agileits {
 		letter-spacing: 2px;
 		line-height: 1.3em;
 	}
-	h3.tittle {
+	.about-title {
 		font-size: 2.5em;
 		margin-bottom: 0.8em;
 	}
@@ -758,6 +776,9 @@ p.para-agileits {
 		width: 32.1%;
 		height: 100%;
 	}
+    .products-top h4 {
+		width: 89%;
+	}
 }
 @media(max-width:800px) {
 	.slider-info h3 {
@@ -766,7 +787,7 @@ p.para-agileits {
 	.slider-info {
 		margin-top: 28%;
 	}
-	h3.tittle {
+	.about-title {
 		font-size: 2.3em;
 	}
 	.banner_bottom_left {
@@ -815,6 +836,9 @@ p.para-agileits {
 	.about-grid p {
 		font-size: 0.97em;
 	}
+    .products-top {
+		padding: 50px 0;
+	}
 	.products-top h2 {
 		font-size: 35px;
 	}
@@ -835,15 +859,15 @@ p.para-agileits {
 		line-height: 25px;
 		margin-bottom: 15px;
 	}
-	.products-top-grid-1 button.btn {
-		padding: 12px 40px;
-	}
 	.products-top-grid-2 {
 		margin-top: 40px;
 	}
 	.products-top-grid-2 h3 {
 		margin-bottom: 10px;
 		font-size: 20px;
+	}
+    .navbar-header a {
+		font-size: 1em;
 	}
 }
 @media(max-width:767px) {
@@ -897,6 +921,10 @@ p.para-agileits {
 	.footer h4 {
     font-size: 1.4em;
 	}
+    .products-top h4 {
+		width: 80%;
+		line-height: 25px;
+	}
 }
 @media(max-width:667px) {
 	.slider-info h3 {
@@ -906,7 +934,7 @@ p.para-agileits {
 	.banner_bottom_left {
 		padding: 3em 2em;
 	}
-	h3.tittle {
+	.about-title {
 		margin-bottom: 0.7em;
 	}
 	.places-to-visit figure.effect-zoe h4 {
@@ -919,15 +947,12 @@ p.para-agileits {
 		font-size: 30px;
 		margin-bottom: 30px;
 	}
-
 	.about-grid h3 {
 		font-size: 1.7em;
 	}
-
 	.about-grid span {
 		font-size: 0.89em;
 	}
-
 	.about-grid p {
 		font-size: 0.97em;
 	}
@@ -936,10 +961,21 @@ p.para-agileits {
 		width: 100%;
 		float: none;
 	}
-
 	.center-grid {
 		float: none;
 		width: 100%;
+	}
+	.places-to-visit .grid figure img {
+		padding: 5px 0;
+	}
+    .about-title {
+		font-size: 1.5em;
+		margin-bottom: 0.8em;
+        text-align: center;
+        padding-top: 0;
+	}
+    .products-top h2 {
+		font-size: 30px;
 	}
 }
 @media(max-width:600px) {
@@ -961,7 +997,7 @@ p.para-agileits {
 	}
 }
 @media(max-width:568px) {
-	h3.tittle {
+	.about-title {
 		font-size: 2.1em;
 	}
 	.banner_bottom_left {
@@ -970,6 +1006,35 @@ p.para-agileits {
 	.places-to-visit .grid figure {
 		margin: 0;
 		width: 33.3%;
+	}
+    .products-top {
+		padding: 35px 0;
+	}
+	.products-top h2 {
+		font-size: 28px;
+		margin-bottom: 15px;
+	}
+	.products-top h4 {
+		width: 95%;
+		font-size: 15px;
+		line-height: 23px;
+	}
+	.products-top-grid-1 h3 {
+		font-size: 20px;
+	}
+	.products-top-grid-1 p {
+		font-size: 14px;
+		line-height: 23px;
+		margin-bottom: 10px;
+	}
+    .products-top-grid-2 {
+		margin-top: 25px;
+	}
+	.products-top-grid-2 h3 {
+		margin-bottom: 5px;
+	}
+	.products-top-grid-2 p {
+		margin-bottom: 20px;
 	}
 }
 @media(max-width:480px) {
@@ -995,9 +1060,10 @@ p.para-agileits {
 		letter-spacing: 1px;
 	}
 
-	h3.tittle {
+	.about-title {
 		font-size: 2em;
 		letter-spacing: 1px;
+        text-align: center;
 	}
 
 	.places-to-visit figure.effect-zoe h4 {
@@ -1010,28 +1076,28 @@ p.para-agileits {
 	}
 
 	.about-grid h3 {
-		font-size: 1.7em;
+		font-size: 1.3em;
 	}
 
 	.about-grid span {
 		font-size: 0.89em;
 	}
-
 	.about-grid p {
 		font-size: 0.97em;
 	}
-
 	.about-grid {
 		width: 100%;
 		float: none;
 	}
-
 	.center-grid {
 		margin: 0 0;
 	}
-
+	.navbar-header a {
+		font-size: 1.2em;
+	}
+}
 	@media (max-width: 440px) {
-		h3.tittle {
+		.about-title {
 			line-height: 1.3em;
 			margin-bottom: 0.5em;
 		}
@@ -1040,7 +1106,6 @@ p.para-agileits {
 		.slider-info h3 {
 			font-size: 1.3em;
 		}
-
 		.slider-info {
 			margin-top: 50.3%;
 		}
@@ -1048,7 +1113,6 @@ p.para-agileits {
 		.places-to-visit figure.effect-zoe h4 {
 			margin-top: 2.8em;
 		}
-
 		.footer h4 {
 			font-size: 1.3em;
 		}
@@ -1073,12 +1137,19 @@ p.para-agileits {
 		.places-to-visit figure.effect-zoe h4 {
 			margin-top: 5.5em;
 		}
+        .products-top h2 {
+		font-size: 25px;
+	    }
+	    .products-top h4 {
+		    width: 100%;
+		    font-size: 14px;
+		    line-height: 22px;
+	    }
 	}
 	@media (max-width: 375px) {
 		.slider-info h3 {
 			line-height: 1.5em;
 		}
-
 		.agile-b-wrapper h5 {
 			line-height: 2.35em;
 		}
@@ -1087,58 +1158,41 @@ p.para-agileits {
 		.slider-info {
 			margin-top: 81.3%;
 		}
-
 		.slider-info p {
 			letter-spacing: 1px;
 			line-height: 23px;
 			margin: 0;
 		}
-
 		.slider-info h3 {
 			font-size: 1em;
 			letter-spacing: 0;
 		}
-
-		h3.tittle {
-			margin: 0 0.5em 0.5em;
-		}
-
 		.places-to-visit figure.effect-zoe h4 {
 			margin-top: 4.5em;
 		}
-
 		.footer-left, .footer-middle, .footer-right {
 			padding: 0;
 		}
-
 		.about-grid h3 {
 			font-size: 1.7em;
 		}
-
 		.about-grid span {
 			font-size: 0.89em;
 		}
-
 		.about-grid p {
 			font-size: 0.97em;
 		}
-
 		.about-grid {
 			width: 100%;
 			float: none;
 		}
-
 		.center-grid {
 			margin: 0 0;
 		}
-
 		.center-grid {
 			margin: 0 0;
 		}
 	}
-}
-
-
 
 /*--responsive--*/
 
