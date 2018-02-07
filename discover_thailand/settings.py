@@ -42,7 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.flatpages',
     'django_forms_bootstrap',
     'paypal.standard.ipn',
+    'mixpanel',
     'disqus',
+    'tinymce',
+    'emoticons',
     'home',
     'accounts',
     'contact',
@@ -50,6 +53,7 @@ INSTALLED_APPS = [
     'about',
     'products',
     'paypal_store',
+    'threads',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -140,13 +144,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = ''
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+# tinymce settings
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "vendors", "js", "tinymce", "tinymce.min.js")
 
 # Setting for sending emails: Contact form.
