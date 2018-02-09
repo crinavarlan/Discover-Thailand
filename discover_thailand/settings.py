@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'about',
     'products',
     'paypal_store',
-    'threads',
+    'threads'
+
 ]
 
 AUTH_USER_MODEL = 'accounts.User'

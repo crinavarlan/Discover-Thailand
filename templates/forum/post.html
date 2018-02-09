@@ -1,8 +1,9 @@
 {% load staticfiles %}
 {% load emoticons_tags %}
+
+<div class="container">
 <section class="row comment col-md-9">
  <div class="col-md-3 comment-profile">
-   <p><img src="{% static 'images/user.png' %}" /></p>
    <p>{{ post.user.username }}</p>
    <p>{{ post.user.posts.count }} POSTS</p>
  </div>
@@ -16,3 +17,4 @@
  </div>
 
 </section>
+</div>

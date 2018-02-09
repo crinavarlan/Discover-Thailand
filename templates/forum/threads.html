@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load thread_extras %}
 {% block content %}
+
+<div class="container">
  <div class="row header">
    <div class="jumbotron"><h1>{{ subject.name }}</h1></div>
  </div>
@@ -15,3 +17,4 @@
    {% endfor %}
  </div>
 {% endblock %}
+</div>
