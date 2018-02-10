@@ -53,7 +53,8 @@ INSTALLED_APPS = [
     'about',
     'products',
     'paypal_store',
-    'threads'
+    'threads',
+    'polls',
 
 ]
 
