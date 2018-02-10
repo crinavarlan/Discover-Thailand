@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d6fccb3-5866-4528-bd71-a136fc3939e4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/polls/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/polls/admin.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/polls/apps.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/polls/forms.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/polls/migrations/0001_initial.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/polls/migrations/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/polls/models.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/polls/tests.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/polls/views.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/discover_thailand/settings.py" afterPath="$PROJECT_DIR$/discover_thailand/settings.py" />
-      <change beforePath="$PROJECT_DIR$/discover_thailand/urls.py" afterPath="$PROJECT_DIR$/discover_thailand/urls.py" />
-      <change beforePath="$PROJECT_DIR$/templates/forum/thread.html" afterPath="$PROJECT_DIR$/templates/forum/thread.html" />
-      <change beforePath="$PROJECT_DIR$/templates/forum/thread_form.html" afterPath="$PROJECT_DIR$/templates/forum/thread_form.html" />
-      <change beforePath="$PROJECT_DIR$/threads/forms.py" afterPath="$PROJECT_DIR$/threads/forms.py" />
-      <change beforePath="$PROJECT_DIR$/threads/templatetags/thread_extras.py" afterPath="$PROJECT_DIR$/threads/templatetags/thread_extras.py" />
-      <change beforePath="$PROJECT_DIR$/threads/views.py" afterPath="$PROJECT_DIR$/threads/views.py" />
-    </list>
+    <list default="true" id="3d6fccb3-5866-4528-bd71-a136fc3939e4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -103,6 +84,16 @@
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/js/script.js" />
         <option value="$PROJECT_DIR$/home/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/blog/blogposts.html" />
         <option value="$PROJECT_DIR$/templates/blog/blogpostform.html" />
@@ -256,6 +246,7 @@
         <option value="$PROJECT_DIR$/discover_thailand/urls.py" />
         <option value="$PROJECT_DIR$/polls/forms.py" />
         <option value="$PROJECT_DIR$/README.MD" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -934,14 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="92" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/polls/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -949,6 +932,14 @@
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
