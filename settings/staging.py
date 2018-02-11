@@ -1,4 +1,4 @@
-from .base import *
+from base import *
 
 DEBUG = False
 
@@ -12,14 +12,9 @@ DATABASES = {
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_j6TE8wziTY7GfstmdTOr1YgB')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_ILy21dWXXOZiX89YcOA3iCku')
 
-<<<<<<< HEAD
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
-=======
-# Paypal environment variables
-PAYPAL_NOTIFY_URL = 'https://discover-thailand.herokuapp.com/'
->>>>>>> 4e2b83553da2758e08ca006e1a329a8d4c9824a6
-PAYPAL_RECEIVER_EMAIL = 'thailandbusiness.sandbox@yahoo.com'
 
+PAYPAL_NOTIFY_URL = 'https://discover-thailand.herokuapp.com/'
+PAYPAL_RECEIVER_EMAIL = 'thailandbusiness.sandbox@yahoo.com'
 
 SITE_URL = 'https://discover-thailand.herokuapp.com'
 ALLOWED_HOSTS.append('discover-thailand.herokuapp.com')
