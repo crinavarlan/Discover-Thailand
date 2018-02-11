@@ -9,13 +9,12 @@ DATABASES = {
     }
 }
 
-# Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_j6TE8wziTY7GfstmdTOr1YgB')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_ILy21dWXXOZiX89YcOA3iCku')
 
-# Paypal environment variables
 PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'thailandbusiness.sandbox@yahoo.com'
+
 
 SITE_URL = 'https://discover-thailand.herokuapp.com'
 ALLOWED_HOSTS.append('discover-thailand.herokuapp.com')

@@ -22,6 +22,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'n3p6kv-%f)bhuc1r)1p%p!ykhior(2fmi*)7dwxssgwp$=ze&q'
 
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
 
 ALLOWED_HOSTS = []
 SITE_ID = 1
@@ -67,9 +69,12 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware to MIDDLEWARE'
 ]
 
 ROOT_URLCONF = 'discover_thailand.urls'
@@ -91,12 +96,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'discover_thailand.wsgi.application'
-
-DISQUS_WEBSITE_SHORTNAME = 'DiscoverThailand'
-
-
-# Password validation
-# https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -141,3 +140,4 @@ MEDIA_URL = '/media/'
 
 # tinymce settings
 TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "vendors", "js", "tinymce", "tinymce.min.js")
+
