@@ -1,0 +1,30 @@
+{% load thread_extras %}
+
+{% if thread.poll %}
+               <div class="container">
+                   <div class="col-md-6">
+                       <strong>{{ thread.poll.question }}</strong><br><br>
+
+                     {% for subject in thread.poll.subjects.all %}
+                           <div class="col-md-10">
+                               <strong>{{ subject.name }}</strong>
+                               <span class="pull-right">{{ subject|vote_percentage }}%</span>
+                           </div>
+                            <span id="tick-vote" ng-if="poll.user_has_voted == false" ng-click='user_vote_button(thread subject user)' class="glyphicon glyphicon-ok col-sm-1 btn-vote"></span>
+
+                           {% autoescape off %}
+
+                           {% endautoescape %}
+
+                        <div class="col-md-10">
+                         <div class="progress">
+                           <div class="progress-bar progress-bar-info" role="progressbar"
+                            aria-value="{{ subject|vote_percentage }}" aria-valuemin="0"
+                            aria-valuemax="100" style="width:{{ subject|vote_percentage }}%;">
+                           </div>
+                         </div>
+                        </div>
+                      {% endfor %}
+                   </div>
+               </div>
+           {% endif %}
