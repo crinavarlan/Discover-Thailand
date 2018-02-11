@@ -9,10 +9,6 @@ class CustomUserTest(TestCase):
             'email': 'tester@test.com',
             'password1': 'test123',
             'password2': 'test123',
-            'credit_card_number': 4242424242424242,
-            'cvv': 123,
-            'expiry_month': 9,
-            'expiry_year': 2033,
         })
         self.assertTrue(form.is_valid())
 
@@ -20,10 +16,6 @@ class CustomUserTest(TestCase):
         form = UserRegistrationForm({
             'password1': 'test123',
             'password2': 'test123',
-            'credit_card_number': 4242424242424242,
-            'cvv': 123,
-            'expiry_month': 1,
-            'expiry_year': 2033
         })
         self.assertFalse(form.is_valid())
         self.assertRaisesMessage(forms.ValidationError,
@@ -34,10 +26,6 @@ class CustomUserTest(TestCase):
         form = UserRegistrationForm({
             'email': 'tester@test.com',
             'password2': 'test123',
-            'credit_card_number': 4242424242424242,
-            'cvv': 123,
-            'expiry_month': 1,
-            'expiry_year': 2033
         })
         self.assertFalse(form.is_valid())
         self.assertRaisesMessage(forms.ValidationError,
@@ -48,10 +36,6 @@ class CustomUserTest(TestCase):
         form = UserRegistrationForm({
             'email': 'tester@test.com',
             'password1': 'test123',
-            'credit_card_number': 4242424242424242,
-            'cvv': 123,
-            'expiry_month': 1,
-            'expiry_year': 2033
         })
         self.assertFalse(form.is_valid())
         self.assertRaisesMessage(forms.ValidationError,

@@ -29,12 +29,10 @@ def user_vote_button(thread, subject, user):
     vote = thread.poll.votes.filter(user_id=user.id).first()
 
     if not vote:
-        if user.is_authenticated():
+        if user.is_authenticated:
             link = """
-           <div class="col-md-3 btn-vote"> 
-           <a href="%s" class="btn btn-default btn-sm">
-             Add my vote!
-           </a>
+           <div id="tick-vote"> 
+           <a href="%s" class="glyphicon glyphicon-ok col-sm-1 btn-vote">Vote!</a>
            </div>""" % reverse('cast_vote', kwargs={'thread_id': thread.id, 'subject_id': subject.id})
 
             return link
@@ -45,7 +43,10 @@ def user_vote_button(thread, subject, user):
 @register.filter
 def vote_percentage(subject):
     count = subject.votes.count()
+
     if count == 0:
         return 0
+
     total_votes = subject.poll.votes.count()
+
     return (100 / total_votes) * count
