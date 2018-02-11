@@ -1,0 +1,1 @@
+web: python manage.py runserverheroku local -f Procfile.local
