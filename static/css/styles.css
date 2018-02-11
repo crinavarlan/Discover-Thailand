@@ -947,6 +947,9 @@ p.para-agileits {
         font-size: 0.9em;
         padding: 10px;
     }
+	.item img {
+		height: 50%;
+	}
 }
 @media(max-width:767px) {
 	.navbar-collapse.in {
