@@ -90,17 +90,13 @@ Access admin account:
 * `http://127.0.0.1:8000/admin/`
 
 
-### If you want to **test the register**, use the following credit card data:
-
-* Credit card number: *4242424242424242*
-* CVV: *123*
-* Expiration month: *9*
-* Expiration year: *2033*
-
 ## Acknowledgments
 - The text used in the project was retrieved from:
 
-https://www.nomadicmatt.com/travel-guides/thailand-travel-tips/
-http://www.statravel.co.uk/travel-thailand.htm
+* https://www.nomadicmatt.com/travel-guides/thailand-travel-tips/
+* http://www.statravel.co.uk/travel-thailand.htm
+* http://thailand-uk.com/forums/
+* https://www.tripadvisor.co.uk/
+* https://www.lonelyplanet.com/thailand
 
 
