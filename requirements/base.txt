@@ -7,7 +7,7 @@ django-forms-bootstrap==3.1.0
 django-paypal==0.3.6
 django-tinymce==2.7.0
 gunicorn==19.7.1
-Pillow==2.9.0
+Pillow==6.2.0
 python-dateutil==2.6.1
 six==1.11.0
 stripe
